@@ -1,0 +1,4 @@
+Allez sur l'URL suivante: 'http://192.168.1.28/?page=survey'.
+
+Inspecter dans la console, changer la value d'une des options de 1(-10) à 1000000000000000000000000000000000000.
+Choisir ce champs de l'option. 

@@ -1,0 +1,5 @@
+# Quelle commande permet de renommer votre système ?
+
+hostname new-systemname
+
+# C'est donc la commande hostname

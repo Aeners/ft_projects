@@ -1,0 +1,4 @@
+export const PIECE_GO_DOWN = 'PIECE_GO_DOWN';
+export const PIECE_GO_LEFT = 'PIECE_GO_LEFT';
+export const PIECE_GO_RIGHT = 'PIECE_GO_RIGHT';
+export const PIECE_GO_STRAIGHT_DOWN = 'PIECE_GO_STRAIGHT_DOWN';

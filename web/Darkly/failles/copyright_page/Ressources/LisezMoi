@@ -1,0 +1,9 @@
+Hidden in the comments on the copyright page, there is:
+You must cumming from : "https://www.nsa.gov/" to go to the next step
+and
+Let's use this browser : "ft_bornToSec". It will help you a lot.
+
+We can set the Referer heading to pretend we're coming from the NSA, and the User-Agent header to pretend we're using a browser with the identifier as ft_bornToSec
+
+Here is the curl command that will receive the correct page in response:
+curl -H "Referer: https://www.nsa.gov/" -H "User-Agent: ft_bornToSec" -O  http://192.168.1.30/?page=e43ad1fdc54babe674da7c7b8f0127bde61de3fbe01def7d00f151c2fcca6d1c

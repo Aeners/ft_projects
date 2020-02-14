@@ -1,0 +1,8 @@
+SQL injection on Members page allowed to view contents of users table.
+
+`1 OR 1=1 UNION SELECT username, password FROM Member_Brute_Force.db_default`
+
+Password for root and admin are the same, encoded as
+`3bf1114a986ba87ed28fc1b5884fc2f8`
+hashed in md5, which is insecure. Easily cracked to `shadow`.
+Logging in revealed this hash.

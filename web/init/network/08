@@ -1,0 +1,4 @@
+#Trouvez chez quel hébergeur est le site Slash16
+
+# 'nslookup slash16.org' nous donne plusieurs adresses IP qui sont slash16.org
+# Faire un 'whois' sur l'une d'entre elles

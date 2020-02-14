@@ -1,0 +1,4 @@
+# Récupérer l’adresse IP interne du container overlord sans lancer son shell et en
+# une commande
+
+docker inspect --format='{{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}' overlord

@@ -1,0 +1,270 @@
+body {
+    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    /*font-size: 1rem;*/
+    font-weight: 300;
+    line-height: 1.6;
+    background-color: #f5f8fa !important;
+}
+
+
+nav {
+    margin-bottom: 100px;
+}
+
+.box {
+    background-color: white;
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.125);
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.result-search {
+    background-color: white;
+    width: 240px;
+    height: 100px;
+    position: absolute;
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.125);
+    padding-top: 5px;
+    padding-left: 15px;
+    overflow: auto;
+    display: none;
+    z-index: 1;
+}
+
+#notificationsButton:hover {
+    cursor: pointer;
+}
+
+.notifications {
+    height: 300px;
+    overflow: auto;
+    display: none;    
+}
+
+/**
+ *  Left Column
+ */
+.hl1 {
+    text-align: center;
+}
+
+.hl3 {
+    height: 243px;
+}
+
+.profile_picture {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    display: inline-block;
+    position: relative;
+    object-fit: contain;
+}
+
+.upload-photo {
+    display: none;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 66px;
+    left: 50%;
+    opacity: 0.5;
+    font-size: 63px;
+    font-weight: 300;
+}
+
+.profile_picture:hover + .upload-photo {
+    display: inherit;
+}
+
+.upload-photo:hover {
+    display: inherit;
+    cursor: pointer;
+}
+
+.profile_star {
+    width: 10px;
+}
+
+.center-orientation {
+    text-align: center;
+}
+
+.btn.btn-default.selected {
+    background-color: rgba(254, 61, 0, 0.27);
+}
+
+span.hashtag {
+    border: 1px solid #ff5a33;
+    color: #ff5a33;
+    font-weight: bold;
+    padding: 2px;
+    border-radius: 4px;
+    display: inline-block;
+    margin-top: 1px;
+}
+
+span.hashtag_user {
+    border: 1px solid #ff5a33;
+    color: #ff5a33;
+    font-weight: bold;
+    padding: 2px;
+    border-radius: 4px;
+    display: inline-block;
+    margin-top: 1px;
+    cursor: pointer;
+}
+
+.hashtag-box {
+    margin-top: 10px;
+    height: 111px;
+    overflow: auto;
+}
+
+/**
+ *  Middle Column
+ */
+.swipe-box {
+    text-align: center;
+}
+
+.like {
+    width: 50px;
+}
+
+.dislike {
+    width: 50px;
+}
+
+.match-img {
+    max-width: 400px;
+    width: 90%;
+    max-height: 400px;
+    object-fit: contain;
+}
+
+/**
+ *  Right Column
+ */
+
+.hr1 {
+    padding: 10px;
+}
+
+.range-age-values {
+    width: 90px;
+    display: inline;
+}
+
+#skip-value-upper-score, #skip-value-upper {
+    position: absolute;
+    right: -35px;
+}
+
+#range_age, #range_score {
+    margin-top: 10px;
+    margin-left: 7%;
+    width: 85%;
+}
+
+
+/**
+ *  Chat Box
+ */
+
+.profile_picture_chat {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    object-fit: contain;
+}
+
+.online {
+    border: 2px green solid;
+}
+
+.offline {
+    border: 2px red solid;
+}
+
+.chat-people {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+    height: 65px;
+    cursor: pointer;
+}
+
+.last-box {
+    border-bottom: 0px solid rgba(0, 0, 0, 0.125) !important;
+}
+
+.chat-img {
+    display: inline-block;
+}
+
+.chat-description {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 5px;
+}
+
+.hl-chat {
+    height: 500px;
+}
+
+.message-box {
+    height: 430px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.new-match {
+    color: orangered;
+}
+
+.msg-img-text {
+    margin-top: 4px;
+}
+
+.message-sent {
+    background-color: lightgrey;
+    border-radius: 5px;
+}
+
+.message-received {
+    background-color: rgba(254, 61, 0, 0.27);
+    border-radius: 5px;
+}
+
+#filter-age-score {
+    margin-top: 10px;
+    right: 0px;
+}
+
+.alignRight {
+    text-align: right;
+}
+
+.next-arrow {
+    top: 44%;
+    right: 10%;
+    position: absolute;
+}
+
+.previous-arrow {
+    top: 44%;
+    left: 10%;
+    position: absolute;
+}
+
+.arrows {
+    width: 35px;
+}

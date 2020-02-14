@@ -1,0 +1,4 @@
+# Déterminez le type du serveur
+# nslookup 10.51.1.253 | head -n4, la valeur de name donne dhcp.42.fr qui explique que le protocole
+# du serveur est en dhcp. Ce type distribue automatiquement une adresse IP, basée sur la plage définie
+# auparavant. 

@@ -1,0 +1,2 @@
+# Identifiez l’adresse IP de l’interface Ethernet
+ifconfig en0 | grep 'inet ' | cut -c7-18

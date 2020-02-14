@@ -1,0 +1,5 @@
+# Trouvez un service qui permet de lancer des tâches à horaires régulières
+
+# Cron est le gestionnaire des tâches devant être exécutées à un moment précis.
+# Chaque utilisateur a un fichier crontab, lui permettant d'indiquer
+# les actions à effectuer régulièrement.

@@ -1,0 +1,4 @@
+# Récupérer depuis le Docker Hub le container hello-world disponible sur le Docker
+# Hub.
+
+docker pull hello-world

@@ -1,0 +1,423 @@
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+	outline: none;
+}
+
+h1 {
+	text-align: center;
+}
+
+html {
+	height: 100%;
+}
+
+body {
+	font-family: 'Raleway', cursive;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f7b4b4+0,ff723a+100 */
+	background: #f7b4b4; /* Old browsers */
+	background: -moz-linear-gradient(45deg, #f7b4b4 0%, #ff723a 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(45deg, #f7b4b4 0%,#ff723a 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(45deg, #f7b4b4 0%,#ff723a 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f7b4b4', endColorstr='#ff723a',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+
+a {
+  color: #00B7FF;
+}
+
+button:focus
+{
+	outline:0;
+}
+
+#home-title {
+	top: 10%;
+	position:absolute;
+	font-size: 14vw;
+	color: white;
+	font-family: 'Vibur', cursive;
+	text-shadow: 0 0 2vw white;
+	left: 0;
+	right: 0;
+}
+
+#home
+{
+	text-align: center;
+}
+
+.button
+{
+	width: 21%;
+	background-color: white;
+	border: none;
+	color: black;
+	padding: 2vw 2vw 2vw 2vw;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	transition-duration: 0.4s;
+	cursor: pointer;
+}
+
+.button-home
+{
+	background-color: #2f2f2f; /* fallback if below unsupported */
+	background-color: rgba(42, 42, 42, 0); /* to make its background transparent */
+	border: 0.5vw solid white;
+	border-radius: 1.5vw; /* make button cornes more round */
+	color: white;
+	font-size: 3vw;
+	text-shadow: 0.2vw 0.2vw 2vw white; /* to shine */
+	white-space:nowrap; overflow:hidden; /* button text on one line */
+}
+
+.button-home:hover
+{
+	background-color: white;
+	color: #FB9479;
+}
+
+.centered {
+	width: 100%;
+	top: 50%;
+	position:absolute;
+
+}
+
+/* lines on left and right side of button */
+#home-line-left {
+	width: 37%;
+	top: 50%;
+	height: 0.5vw;
+	background-color: white;
+	position: absolute;
+	left: 0%;
+}
+
+#home-line-right {
+	width: 37%;
+	top: 50%;
+	height: 0.5vw;
+	background-color: white;
+	position: absolute;
+	right: 0%;
+}
+
+.logo {
+	width: 180px;
+    top: 27%;
+    position: fixed;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.centered-logo {
+	text-align: center;
+}
+
+.logo-form {
+    max-width: 300px;
+    margin: auto;
+    padding: 30px;
+	width: 180px;
+}
+
+.container {
+    margin: 0 auto;
+    padding: 30px;
+    background-color: #FFF;
+}
+
+.container_login {
+	margin: 0 auto;
+	padding: 30px;
+	background-color: #FFF;
+	max-width: 300px;
+}
+
+.profile_container {
+	margin-top: 20px;
+}
+
+.score {
+	position: absolute;
+	width: 70px;
+	height: 70px;
+	border-radius: 50%;
+	color: white;
+	margin: -50px 0px 0 205px;
+	background: #ff3b0b;
+	padding: 5px;
+}
+
+.photo_container {
+	margin-top: 50px;
+	text-align: center;
+}
+
+.filter_container {
+	margin-top: 50px;
+}
+
+.div_name {
+	text-align: left;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.photo {
+	border-radius: 50%;
+	width: 120px;
+	height: 120px;
+}
+
+.form-row {
+	width: 100%;
+}
+
+/**
+ * ALERT
+ */
+.alert {
+	padding: 15px 0px;
+	margin-bottom: 20px;
+	border: 1px solid transparent;
+	border-radius: 4px;
+	width: 100%;
+}
+
+.alert-success {
+	color: #3c763d;
+	background-color: #dff0d8;
+	border-color: #d6e9c6;
+}
+
+.alert-danger {
+	color: #a94442;
+	background-color: #f2dede;
+	border-color: #ebccd1;
+}
+
+.alert-info {
+	color: #31708f;
+	background-color: #d9edf7;
+	border-color: #bce8f1;
+}
+
+/**
+ * HEADER NAVIGATION
+ */
+.bar {
+	width: 100%;
+    background-color: #333;
+	height: 42px;
+	margin: 0;
+	display: flex;
+	/*position: fixed;*/
+}
+
+.inner-bar {
+	min-width: 330px;
+	width: 50%;
+	margin: auto;
+	display: flex;
+}
+
+.logo-bar {
+	justify-content: flex-start;
+	flex: 1 1 auto;
+	display: flex;
+}
+
+.icones-bar {
+	justify-content: flex-end;
+	flex: 3 1 auto;
+	display: flex;
+}
+
+.navbar-brand {
+	color: white;
+	flex: 1 1 auto;
+	height: 32px;
+	margin-top: 10px;
+	text-align: center;
+	font-size: 20px;
+	font-family: 'Lobster', cursive;
+}
+
+.navbar-brand:hover {
+	border-bottom: 3px solid #df4723;
+}
+
+.img-bar {
+	height: 20px;
+}
+
+.nav-list .navbar-brand .img-bar {
+	position: absolute;
+    margin-top: -30px;
+    margin-left: -10px;
+}
+
+.nav-list { 
+	display: none;
+	padding-top: 40px;
+	background-color: #333;
+}
+
+.nav-list:hover {
+	box-shadow: inset 0 -3px 0 #df4723;
+}
+
+/**
+ * HOME PAGE
+ */
+
+.home_container {
+	display: flex;
+	width: 1200px;
+	margin: 0 auto;
+}
+
+.left_column {
+	flex: 2;
+	max-width: 300px;
+}
+
+.middle_column {
+	flex: 5;
+	margin-left: 10px;
+}
+
+.right-column {
+	flex: 2;
+	margin-left: 10px;
+	max-width: 300px;
+}
+/**
+ * SWIPE BOX
+ */
+
+.swipe-box {
+	width: 570px;
+	height: 570px;
+	display: block;
+	background-color: white;
+	margin: 50px auto;
+	text-align: center;
+	padding: 0;
+}
+
+.match-img {
+	margin-top: -10px;
+}
+
+/**
+ * SWIPE BOX
+ */
+.chat {
+	width: 510px;
+	height: 455px;
+	display: block;
+	background-color: white;
+	margin: -30px auto;
+	overflow: hidden;
+}
+
+.list_chat {
+	border: 1px solid silver;
+	width: 98%;
+	margin: 2px auto;
+	display: flex;
+}
+
+.chat_image {
+	flex: 2;
+	margin: auto 0 auto 10px;
+}
+
+.column {
+	flex: 1;
+}
+
+.chat_info {
+	flex: 30;
+}
+
+.chat_people {
+	border-radius: 50%;
+	width: 60px;
+}
+
+span.hashtag {
+	margin-right: 4px;
+	border: 1px solid red;
+	color: red;
+	font-weight: bold;
+	padding: 4px;
+	border-radius: 4px;
+}
+
+.edit_photo {
+	display: inherit;
+	border-radius: 50%;
+	width: 120px;
+	height: 120px;
+	position: absolute;
+	background: white;
+	margin: -124px 0 0 60px;
+	opacity: 0;
+	transition: .5s ease;
+}
+
+.edit_photo p {
+	font-size: 200px;
+	margin: -47% 0px 0px 20px;
+	position: absolute;
+}
+
+.div_photo img:hover + .edit_photo {
+	opacity: 0.5;
+}
+
+.edit_photo:hover {
+	opacity: 0.5;
+}
+
+.score.target {
+	margin: -420px 0 0 460px;
+}
+
+.range-age-values {
+	display: inline-block;
+}
+
+#skip-value-lower {
+	width: 100px;
+}
+
+#skip-value-upper {
+	margin: 0 0 0 67px;
+}
+
+#range_age {
+	margin: 10px;
+}
+
+#skip-value-lower-score {
+	width: 100px;
+}
+
+#skip-value-upper-score {
+	margin: 0 0 0 67px;
+}
+
+#range_score {
+	margin: 10px;
+}

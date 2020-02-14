@@ -1,0 +1,5 @@
+# Dans quel fichier se trouve la version installée de votre Debian ?
+
+/etc/debian_version
+
+# La version du debian installée est la 9.4

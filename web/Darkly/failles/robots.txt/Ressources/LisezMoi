@@ -1,0 +1,5 @@
+robots.txt excludes 2 directories: /whatever and /.hidden
+inside whatever (a directory which can be accessed), there is an htpasswd file containing
+root:8621ffdbc5698829397d97767ac13db3
+the password is an md5 hash which translates to 'dragon'
+this is the login to the /admin page (root as username, dragon as password)

@@ -1,0 +1,12 @@
+# Réaliser un script qui met à jour l'ensemble des sources de package, puis de vos
+# packages et qui log l'ensemble dans un fichier nommé /var/log/update_script.log
+# Créez une tâche plannifiée pour que ce script s'exécute une fois par semaine 
+# à 4h00 du matin
+
+#!/bin/sh
+echo 'apt-get update && apt-get upgrade >> /var/log/update_script.log' >> ~/apt_update.sh
+
+# Entrer la line suivante pour l'ajouter au crontab et plannifié le script une fois par semaine 
+# a 4h 
+# echo '0  4    * * 1   root    sh ~/apt_update.sh' | crontab
+# crontab -l pour vérifier les crontabs et crontab -e pour les éditer

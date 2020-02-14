@@ -1,0 +1,8 @@
+# Trouvez grâce au résultat de la commande précédente le nom et l'IP du matériel qui fait le lien entre vous
+# (réseau local) et l'extérieur
+
+name: nat-1\nip: 10.60.1.11
+
+# 'nat' (pour 'Network Address Translation', est l'appareil qui fait le lien entre le réseau local
+# et le réseau extérieur
+

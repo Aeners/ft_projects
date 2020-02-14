@@ -1,0 +1,8 @@
+# Avec la commande précédente, interdisez le reste
+
+iptables -P INPUT DROP
+iptables -P OUTPUT DROP
+
+# La commande suivante va faire perdre n'importe quel nombre de paquet venant de l'IP spécifiée:
+iptables -I INPUT -d {INCOMING-IP} -j DROP
+# Si aucune adresse IP n'est spécifiée, aucune ne sera autorisée sauf ce qui a été autorisé au préalable

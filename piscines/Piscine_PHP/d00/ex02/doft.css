@@ -1,0 +1,219 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   doft.css                                           :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: arlecomt <arlecomt@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2017/03/03 18:27:01 by arlecomt          #+#    #+#             */
+/*   Updated: 2017/03/03 18:57:41 by arlecomt         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+body
+{
+	background-color: #4F4F4F;
+}
+
+#container
+{
+	width: 1400px;
+	margin: auto;
+}
+
+#container_2
+{
+	width: 1400px;
+	margin: auto;
+	text-align: center;
+}
+
+#header
+{
+	width: 1400px;
+	height: 120px;
+	background-color: #8F8F8F;
+	border-radius: .5em;
+	box-shadow: .5em .5em .5em black;
+	margin-top: 1em;
+}
+
+#day_of_the_42
+{
+	height: 6em;
+	margin: 10px;
+	float: left;
+	display: inline-block;
+}
+
+#left
+{
+	width: 140px;
+	height: 440px;
+	background-color: #8F8F8F;
+	border-radius: .5em;
+	box-shadow: .5em .5em .5em black;
+	display: inline-block;
+	margin-right: 20px;
+	margin-top: 20px;
+	vertical-align: top;
+}
+
+#center
+{
+	width: 970px;
+	height: 550px;
+	background-color: #8F8F8F;
+	border-radius: .5em;
+	margin: auto;
+	box-shadow: .5em .5em .5em black;
+	display: inline-block;
+	margin-top: 20px;
+}
+
+#right
+{
+	width: 132px;
+	height: 440px;
+	background-color: #8F8F8F;
+	border-radius: .5em;
+	margin: auto;
+	box-shadow: .5em .5em .5em black;
+	display: inline-block;
+	margin-left: 20px;
+	margin-top: 20px;
+	vertical-align: top;
+}
+
+#green_box
+{
+	width: 500px;
+	height: 150px;
+	background-color: #89FE89;
+	border-radius: .5em;
+	margin: auto;
+	box-shadow: .5em .5em .5em black;
+	position: absolute;
+	margin-top: -50px;
+	margin-left: -50px;
+	text-align: left;
+}
+
+#loupe
+{
+	height: 120px;
+	margin-left: 750px;
+	margin-top: 20px;
+	display: inline-block;
+}
+
+#close-reload
+{
+	display: inline-block;
+}
+
+#close
+{
+	margin-bottom: 25px;
+	margin-left: 15px;
+	display: block;
+}
+
+#reload
+{
+	margin-left: 15px;
+	margin-bottom: 60px;
+	display: block;
+	width: 20px;
+	height: 20px;
+}
+
+.left_item
+{
+	width: 75px;
+	height: 75px;
+}
+
+#book
+{
+	margin-top: 10px;
+	width: 80px;
+}
+
+#towel
+{
+	width: 80px;
+}
+
+#first_item
+{
+	margin-top: 10px;
+}
+
+#oeil
+{
+	border: 0.5em solid red;
+	border-radius: .5em;
+}
+
+#cluster
+{
+	margin-top: 5px;
+	height: 540px;
+}
+
+#big_text
+{
+	font-family: "Times New Roman";
+	font-size: 40px;
+}
+
+#shadow
+{
+	text-shadow: 0.25em 0.25em 0.25em #FE4747;
+}
+
+#img_brick
+{
+	margin: auto;
+	width: 90%;
+	height: 4em;
+	background-image: url("resources/brick.jpg");
+}
+
+span
+{
+	font-family: sans-serif;
+}
+
+form
+{
+	margin-bottom: 10px;
+}
+
+#button
+{
+	background-color: #EEF4F8;
+    text-align: center;
+    cursor: pointer;
+    border: 1px solid grey;
+}
+
+#Ikea
+{
+	position: absolute;
+	width: 130px;
+	margin-top: -230px;
+	margin-left: 300px;
+	height: 200px;
+	cursor: pointer;
+}
+
+#Apple
+{
+	position: absolute;
+	width: 200px;
+	margin-top: -250px;
+	margin-left: 750px;
+	height: 150px;
+	cursor: pointer;
+}

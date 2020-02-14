@@ -1,0 +1,6 @@
+# Identifiez les différents appareils réseaux entre votre poste et le domaine slash16.org
+
+traceroute slash16.org
+
+# traceroute slash16.org montre les différents hops fait sur les différents appareils
+# réseaux entre le poste et slash16.org

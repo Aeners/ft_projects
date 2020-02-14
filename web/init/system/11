@@ -1,0 +1,3 @@
+# Quelle commande permet d'afficher l'espace disponible sur le système ?
+
+df -h /

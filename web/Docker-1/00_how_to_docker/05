@@ -1,0 +1,4 @@
+# Lancer le container hello-world et faire en sorte que le container affiche bien son
+# message d’accueil, puis le quitte.
+
+docker run hello-world

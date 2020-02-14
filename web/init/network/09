@@ -1,0 +1,6 @@
+# Trouver l'IP Publique de 42.fr
+
+echo '10.52.1.12'
+
+# Pour trouver ces adresses IP lancer la commande:
+# ping 42.fr et récupérer la première ip indiquée

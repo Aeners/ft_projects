@@ -1,0 +1,142 @@
+<div class="popup-box">
+    <img src="/images/cross.png" class="close-pop-up">
+    <div class="col-sm-12">
+        <h4>Upload photos</h4>
+        <% if (image !== undefined) {
+            for(var i = 0; i < image.length; i++) {%>
+            <div class="upload-individual-photo">
+                <img src="/uploads/<%= image[i] %>" class="upload-img img-thumbnail" id="<%= '/uploads/' + image[i] === profilePic ? 'selected-img' : '' %>" alt="Cinque Terre">
+                <button type="button" class="erase-picture btn btn-danger">Erase this picture</button>
+            </div>
+            <% } %>
+        <% } %>
+        <% if (image === undefined || image.length < 5) { %>
+        <div class="upload-individual-photo">
+            <img src="/images/cross.png" class="img-thumbnail" alt="Cinque Terre">
+            <form method="post" action="/myprofile/uploadPhotos" enctype="multipart/form-data">
+                <input type="file" id="upload-inputs" class="btn btn-primary btn-xs" name="upload" required="true">
+                <input type="submit" name="submit" value="Submit" class="upload-btn btn btn-primary btn-xs">
+            </form>
+        </div>
+        <%}%>
+
+    </div>
+</div>
+<div class="popup-upload-photo">
+</div>
+<div class="container">
+    <div class="row">
+        <% if (success) { %>
+            <% for(var i=0; i < success.length; i++) { %>
+                <div class="alert alert-success">&nbsp;<%= success[i]['msg'] %></div>
+            <% } %>
+        <% } %>
+        <div class="col-sm-12">
+            <div class="box prohl1">
+                <div style="width: 100%;">
+                    <img class="profile_picture" src="<%= profilePic %>">
+                    <div class="upload-photo">+</div>
+                </div>
+                <div>
+                <% for (stars=0; stars < popularityScore; stars++) { %>
+                    <img class="profile_star" src="/images/star.png">
+                <% } %>
+                </div>
+                <p><b><%= firstName %> <%= lastName %></b><button class="btn-link" id="edit-name">edit</button></p>
+                <form method="post" action="/myprofile/editName" class="editable_info" id="form-name">
+                    <label>First Name:</label><br><input type="text" class="form-control edit_pro" name="firstname" value="<%= firstName %>"><br>
+                    <label>Last Name:</label><br><input type="text" class="form-control edit_pro" name="lastname" value="<%= lastName %>"><br><br>
+                    <input type="submit" class="btn btn-primary btn-sm" value="Edit Name">
+                </form>
+                <label for="comment">Bio:</label><button class="btn-link" id="edit-bio">edit</button>
+                <div><%= bio %></div>
+                <form method="post" action="/myprofile/editBio" class="editable_info" id="form-bio">
+                    <textarea class="form-control edit_pro" rows="4" name="bio"><%= bio %></textarea><br>
+                    <input type="submit" class="btn btn-primary btn-sm" value="Edit Bio">
+                </form>
+                <br>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-3">
+            <div class="box col-sm-12">
+                <h4>Who swiped your profile ?</h4>
+                <% if (viewers) { %>
+                    <% for (i=0; i < viewers.length; i++) { %>
+                        <% if (i !== viewers.length - 1) { %>
+                            <div class="chat-people">
+                                <div class="chat-img">
+                                    <img src="/uploads/<%= viewers[i]['profilePicture'] %>" class="profile_picture_chat">
+                                </div>
+                                <div class="chat-description">
+                                    <span><b><%= viewers[i]['firstName'] %> <%= viewers[i]['lastName'] %></b></span><br>
+                                </div>
+                            </div>
+                        <% } else { %>
+                            <div class="chat-people last-box">
+                                <div class="chat-img">
+                                    <img src="/uploads/<%= viewers[i]['profilePicture'] %>" class="profile_picture_chat">
+                                </div>
+                                <div class="chat-description">
+                                    <span><b><%= viewers[i]['firstName'] %> <%= viewers[i]['lastName'] %></b></span><br>
+                                </div>
+                            </div>
+                        <% } %>
+                    <% } %>
+                <% } %>
+            </div>
+        </div>
+        <div class="col-sm-3">
+            <div class="box col-sm-12">
+                <h4>Who liked your profile ?</h4>
+                <% if (likes) { %>
+                    <% for (i=0; i < likes.length; i++) { %>
+                        <% if (i !== likes.length - 1) { %>
+                            <div class="chat-people">
+                                <div class="chat-img">
+                                    <img src="/uploads/<%= likes[i]['profilePicture'] %>" class="profile_picture_chat">
+                                </div>
+                                <div class="chat-description">
+                                    <span><b><%= likes[i]['firstName'] %> <%= likes[i]['lastName'] %></b></span><br>
+                                </div>
+                            </div>
+                        <% } else { %>
+                            <div class="chat-people last-box">
+                                <div class="chat-img">
+                                    <img src="/uploads/<%= likes[i]['profilePicture'] %>" class="profile_picture_chat">
+                                </div>
+                                <div class="chat-description">
+                                    <span><b><%= likes[i]['firstName'] %> <%= likes[i]['lastName'] %></b></span><br>
+                                </div>
+                            </div>
+                        <% } %>
+                    <% } %>
+                <% } %>
+
+            </div>
+        </div>
+        <div class="col-sm-6">
+            <div class="box col-sm-12">
+                <h4>Statistics</h4>
+                <div class="stats"><canvas id="myChart"></canvas></div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="/js/myprofile.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+<script>
+var ctx = document.getElementById('myChart').getContext('2d');
+var myDoughnutChart = new Chart(ctx, {
+    type: 'doughnut',
+    data: {
+    datasets: [{
+        data: [<%= statistics[0] %>, <%= statistics[1] %>],
+        backgroundColor: ['#36a2eb', '#ff6384']   
+    }],
+
+    labels: ['Likes', 'Dislikes'],
+    }
+});
+</script>

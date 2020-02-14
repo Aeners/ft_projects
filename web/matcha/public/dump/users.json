@@ -1,0 +1,979 @@
+{ 
+    "_id" : ObjectId("597bf40f4d7c561ed74501b1"), 
+    "age" : NumberInt(32), 
+    "bio" : "susususu", 
+    "dob" : "1984-8-15", 
+    "email" : "dens@test.fr", 
+    "filter" : {
+        "minAge" : "18.00", 
+        "maxAge" : "80.00", 
+        "minScore" : "0.00", 
+        "maxScore" : "10.00"
+    }, 
+    "filterBy" : "none", 
+    "firstName" : "Denis", 
+    "hashtag" : [
+        "intello"
+    ], 
+    "hashtagFilter" : "", 
+    "images" : [
+        "man.jpg"
+    ], 
+    "lastConnection" : ISODate("2017-08-01T15:37:27.861+0000"), 
+    "lastName" : "Zheng", 
+    "location" : {
+        "type" : "Point", 
+        "coordinates" : [
+            2.3565281, 
+            48.8660601
+        ]
+    }, 
+    "login" : "deniszheng", 
+    "orientation" : "Bisexual", 
+    "password" : "sha1$f94bf855$1$38d5cb58e3c891409ea0c9f1accb4b6d181967c4", 
+    "popularityScore" : NumberInt(10), 
+    "profilePicture" : "man.jpg", 
+    "sex" : "male", 
+    "status" : "offline", 
+    "tmpAddress" : "9 Rue Conté, 75003 Paris, France", 
+    "tmpLat" : "48.8660601", 
+    "tmpLng" : "2.3565281"
+}
+{ 
+    "_id" : ObjectId("597b64da55b02e0f1c4284d9"), 
+    "address" : "38 Boulevard de Bercy, 75012 Paris", 
+    "age" : NumberInt(37), 
+    "bio" : "Lorem Ipsum", 
+    "dob" : "1980-01-12", 
+    "email" : "CampbellDuranseau@jourrapide.com", 
+    "filter" : {
+        "minAge" : "18.00", 
+        "maxAge" : "80.00", 
+        "minScore" : "0.00", 
+        "maxScore" : "10.00"
+    }, 
+    "filterBy" : "none", 
+    "firstName" : "Campbell", 
+    "hashtag" : [
+        "intello", 
+        "bavard", 
+        "aventurier"
+    ], 
+    "hashtagFilter" : "", 
+    "images" : [
+        "man.jpg"
+    ], 
+    "lastConnection" : ISODate("2017-08-01T15:37:27.861+0000"), 
+    "lastName" : "Duranseau", 
+    "lat" : 48.8400917, 
+    "lng" : 2.3783575, 
+    "location" : {
+        "type" : "Point", 
+        "coordinates" : [
+            2.3783575, 
+            48.8400917
+        ]
+    }, 
+    "login" : "cduranseau", 
+    "orientation" : "Women", 
+    "password" : "sha1$12faf935$1$5937d1fb7242e2b3f19c84061ef3c48501b2e564", 
+    "popularityScore" : NumberInt(5), 
+    "profilePicture" : "man.jpg", 
+    "sex" : "male", 
+    "status" : "offline"
+}
+{ 
+    "_id" : ObjectId("597b64da55b02e0f1c4284da"), 
+    "address" : "15 Boulevard Poissonnière, 75002 Paris", 
+    "age" : NumberInt(35), 
+    "bio" : "Lorem Ipsum", 
+    "dob" : "1982-04-06", 
+    "email" : "NevilleSciverit@teleworm.us", 
+    "filter" : {
+        "minAge" : "18.00", 
+        "maxAge" : "80.00", 
+        "minScore" : "0.00", 
+        "maxScore" : "10.00"
+    }, 
+    "filterBy" : "none", 
+    "firstName" : "Neville", 
+    "hashtag" : [
+        "sociable", 
+        "aventurier"
+    ], 
+    "hashtagFilter" : "", 
+    "images" : [
+        "man.jpg"
+    ], 
+    "lastConnection" : ISODate("2017-08-01T15:37:27.861+0000"), 
+    "lastName" : "Sciverit", 
+    "lat" : 48.870925, 
+    "lng" : 2.343296, 
+    "location" : {
+        "type" : "Point", 
+        "coordinates" : [
+            2.343296, 
+            48.870925
+        ]
+    }, 
+    "login" : "nsciverit", 
+    "orientation" : "Women", 
+    "password" : "sha1$12faf935$1$5937d1fb7242e2b3f19c84061ef3c48501b2e564", 
+    "popularityScore" : NumberInt(10), 
+    "profilePicture" : "man.jpg", 
+    "sex" : "male", 
+    "status" : "offline"
+}
+{ 
+    "_id" : ObjectId("597b64da55b02e0f1c4284db"), 
+    "address" : "Chemin de Saint-Mathurin, 45300 Pithiviers", 
+    "age" : NumberInt(64), 
+    "bio" : "Lorem Ipsum", 
+    "dob" : "1953-03-23", 
+    "email" : "DominicLemaitre@dayrep.com", 
+    "filter" : {
+        "minAge" : "18.00", 
+        "maxAge" : "80.00", 
+        "minScore" : "0.00", 
+        "maxScore" : "10.00"
+    }, 
+    "filterBy" : "none", 
+    "firstName" : "Dominic", 
+    "hashtag" : [
+        "geek", 
+        "aventurier"
+    ], 
+    "hashtagFilter" : "", 
+    "images" : [
+        "man.jpg"
+    ], 
+    "lastConnection" : ISODate("2017-08-01T15:37:27.861+0000"), 
+    "lastName" : "Lemaître", 
+    "lat" : 48.179488, 
+    "lng" : 2.241741, 
+    "location" : {
+        "type" : "Point", 
+        "coordinates" : [
+            2.241741, 
+            48.179488
+        ]
+    }, 
+    "login" : "cuthich", 
+    "orientation" : "Women", 
+    "password" : "sha1$12faf935$1$5937d1fb7242e2b3f19c84061ef3c48501b2e564", 
+    "popularityScore" : NumberInt(10), 
+    "profilePicture" : "man.jpg", 
+    "sex" : "male", 
+    "status" : "offline"
+}
+{ 
+    "_id" : ObjectId("597b64da55b02e0f1c4284de"), 
+    "address" : "96 Boulevard Bessières, 75017 Paris", 
+    "age" : NumberInt(29), 
+    "bio" : "Lorem Ipsum", 
+    "dob" : "1988-03-11", 
+    "email" : "DavetBerubaae@teleworm.us", 
+    "filter" : {
+        "minAge" : "18.00", 
+        "maxAge" : "80.00", 
+        "minScore" : "0.00", 
+        "maxScore" : "10.00"
+    }, 
+    "filterBy" : "none", 
+    "firstName" : "Davet", 
+    "hashtag" : [
+        "intello", 
+        "sociable", 
+        "aventurier"
+    ], 
+    "hashtagFilter" : "", 
+    "images" : [
+        "man.jpg"
+    ], 
+    "lastConnection" : ISODate("2017-08-01T15:37:27.861+0000"), 
+    "lastName" : "Bérubé", 
+    "lat" : 48.8960719, 
+    "lng" : 2.3179498, 
+    "location" : {
+        "type" : "Point", 
+        "coordinates" : [
+            2.3179498, 
+            48.8960719
+        ]
+    }, 
+    "login" : "dberube", 
+    "orientation" : "Women", 
+    "password" : "sha1$12faf935$1$5937d1fb7242e2b3f19c84061ef3c48501b2e564", 
+    "popularityScore" : NumberInt(9), 
+    "profilePicture" : "man.jpg", 
+    "sex" : "male", 
+    "status" : "offline"
+}
+{ 
+    "_id" : ObjectId("597b64da55b02e0f1c4284e0"), 
+    "address" : "3bis Rue du Limousin, 95100 Argenteuil", 
+    "age" : NumberInt(33), 
+    "bio" : "Lorem Ipsum", 
+    "dob" : "1984-06-18", 
+    "email" : "EricDurand@dayrep.com", 
+    "filter" : {
+        "minAge" : "18.00", 
+        "maxAge" : "80.00", 
+        "minScore" : "0.00", 
+        "maxScore" : "10.00"
+    }, 
+    "filterBy" : "none", 
+    "firstName" : "Eric", 
+    "hashtag" : [
+        "geek", 
+        "bavard", 
+        "aventurier"
+    ], 
+    "hashtagFilter" : "", 
+    "images" : [
+        "man.jpg"
+    ], 
+    "lastConnection" : ISODate("2017-08-01T15:37:27.861+0000"), 
+    "lastName" : "Durand", 
+    "lat" : 48.9637375, 
+    "lng" : 2.2368649, 
+    "location" : {
+        "type" : "Point", 
+        "coordinates" : [
+            2.2368649, 
+            48.9637375
+        ]
+    }, 
+    "login" : "edurand", 
+    "orientation" : "Women", 
+    "password" : "sha1$12faf935$1$5937d1fb7242e2b3f19c84061ef3c48501b2e564", 
+    "popularityScore" : NumberInt(3), 
+    "profilePicture" : "man.jpg", 
+    "sex" : "male", 
+    "status" : "offline"
+}
+{ 
+    "_id" : ObjectId("597b64da55b02e0f1c4284e3"), 
+    "address" : "38 Boulevard de Bercy, 75012 Paris", 
+    "age" : NumberInt(37), 
+    "bio" : "Lorem Ipsum", 
+    "dob" : "1980-01-12", 
+    "email" : "Campbellieanseau@jourrapide.com", 
+    "filter" : {
+        "minAge" : "18.00", 
+        "maxAge" : "80.00", 
+        "minScore" : "0.00", 
+        "maxScore" : "10.00"
+    }, 
+    "filterBy" : "none", 
+    "firstName" : "Campbelli", 
+    "hashtag" : [
+        "intello", 
+        "bavard", 
+        "aventurier"
+    ], 
+    "hashtagFilter" : "", 
+    "images" : [
+        "woman.jpg"
+    ], 
+    "lastConnection" : ISODate("2017-08-01T15:37:27.861+0000"), 
+    "lastName" : "Duran", 
+    "lat" : 48.8400917, 
+    "lng" : 2.3783575, 
+    "location" : {
+        "type" : "Point", 
+        "coordinates" : [
+            2.3783575, 
+            48.8400917
+        ]
+    }, 
+    "login" : "campedurie", 
+    "orientation" : "Men", 
+    "password" : "sha1$12faf935$1$5937d1fb7242e2b3f19c84061ef3c48501b2e564", 
+    "popularityScore" : NumberInt(10), 
+    "profilePicture" : "woman.jpg", 
+    "sex" : "female", 
+    "status" : "offline"
+}
+{ 
+    "_id" : ObjectId("597b64da55b02e0f1c4284e4"), 
+    "address" : "15 Boulevard Poissonnière, 75002 Paris", 
+    "age" : NumberInt(35), 
+    "bio" : "Lorem Ipsum", 
+    "dob" : "1982-04-06", 
+    "email" : "NevillaSciverit@teleworm.us", 
+    "filter" : {
+        "minAge" : "18.00", 
+        "maxAge" : "80.00", 
+        "minScore" : "0.00", 
+        "maxScore" : "10.00"
+    }, 
+    "filterBy" : "none", 
+    "firstName" : "Nevilla", 
+    "hashtag" : [
+        "sociable", 
+        "aventurier"
+    ], 
+    "hashtagFilter" : "", 
+    "images" : [
+        "woman.jpg"
+    ], 
+    "lastConnection" : ISODate("2017-08-01T15:37:27.861+0000"), 
+    "lastName" : "Sciverit", 
+    "lat" : 48.870925, 
+    "lng" : 2.343296, 
+    "location" : {
+        "type" : "Point", 
+        "coordinates" : [
+            2.343296, 
+            48.870925
+        ]
+    }, 
+    "login" : "nelliesciverit", 
+    "orientation" : "Men", 
+    "password" : "sha1$12faf935$1$5937d1fb7242e2b3f19c84061ef3c48501b2e564", 
+    "popularityScore" : NumberInt(0), 
+    "profilePicture" : "woman.jpg", 
+    "sex" : "female", 
+    "status" : "offline"
+}
+{ 
+    "_id" : ObjectId("597b64da55b02e0f1c4284e5"), 
+    "address" : "Chemin de Saint-Mathurin, 45300 Pithiviers", 
+    "age" : NumberInt(64), 
+    "bio" : "Lorem Ipsum", 
+    "dob" : "1953-03-23", 
+    "email" : "DominicaLemaitre@dayrep.com", 
+    "filter" : {
+        "minAge" : "18.00", 
+        "maxAge" : "80.00", 
+        "minScore" : "0.00", 
+        "maxScore" : "10.00"
+    }, 
+    "filterBy" : "none", 
+    "firstName" : "Dominica", 
+    "hashtag" : [
+        "geek", 
+        "aventurier"
+    ], 
+    "hashtagFilter" : "", 
+    "images" : [
+        "woman.jpg"
+    ], 
+    "lastConnection" : ISODate("2017-08-01T15:37:27.861+0000"), 
+    "lastName" : "Lemaître", 
+    "lat" : 48.179488, 
+    "lng" : 2.241741, 
+    "location" : {
+        "type" : "Point", 
+        "coordinates" : [
+            2.241741, 
+            48.179488
+        ]
+    }, 
+    "login" : "cauthich", 
+    "orientation" : "Men", 
+    "password" : "sha1$12faf935$1$5937d1fb7242e2b3f19c84061ef3c48501b2e564", 
+    "popularityScore" : NumberInt(8), 
+    "profilePicture" : "woman.jpg", 
+    "sex" : "female", 
+    "status" : "offline"
+}
+{ 
+    "_id" : ObjectId("597b64da55b02e0f1c4284e8"), 
+    "address" : "96 Boulevard Bessières, 75017 Paris", 
+    "age" : NumberInt(29), 
+    "bio" : "Lorem Ipsum", 
+    "dob" : "1988-03-11", 
+    "email" : "Davetq2Berube@teleworm.us", 
+    "filter" : {
+        "minAge" : "18.00", 
+        "maxAge" : "80.00", 
+        "minScore" : "0.00", 
+        "maxScore" : "10.00"
+    }, 
+    "filterBy" : "none", 
+    "firstName" : "Daveta", 
+    "hashtag" : [
+        "intello", 
+        "sociable", 
+        "aventurier"
+    ], 
+    "hashtagFilter" : "", 
+    "images" : [
+        "woman.jpg"
+    ], 
+    "lastConnection" : ISODate("2017-08-01T15:37:27.861+0000"), 
+    "lastName" : "Bérubé", 
+    "lat" : 48.8960719, 
+    "lng" : 2.3179498, 
+    "location" : {
+        "type" : "Point", 
+        "coordinates" : [
+            2.3179498, 
+            48.8960719
+        ]
+    }, 
+    "login" : "dberube", 
+    "orientation" : "Men", 
+    "password" : "sha1$12faf935$1$5937d1fb7242e2b3f19c84061ef3c48501b2e564", 
+    "popularityScore" : NumberInt(8), 
+    "profilePicture" : "woman.jpg", 
+    "sex" : "female", 
+    "status" : "offline"
+}
+{ 
+    "_id" : ObjectId("597b64da55b02e0f1c4284e9"), 
+    "address" : "6 Rue du Général Henrion Bertier, 92200 Neuilly-sur-Seine", 
+    "age" : NumberInt(33), 
+    "bio" : "Lorem Ipsum", 
+    "dob" : "1983-07-18", 
+    "email" : "LucLaaasasbrecque@dayrep.com", 
+    "filter" : {
+        "minAge" : "18.00", 
+        "maxAge" : "80.00", 
+        "minScore" : "0.00", 
+        "maxScore" : "10.00"
+    }, 
+    "filterBy" : "none", 
+    "firstName" : "Lucy", 
+    "hashtag" : [
+        "geek"
+    ], 
+    "hashtagFilter" : "", 
+    "images" : [
+        "woman.jpg"
+    ], 
+    "lastConnection" : ISODate("2017-08-01T15:37:27.861+0000"), 
+    "lastName" : "Labrecque", 
+    "lat" : 48.8836525, 
+    "lng" : 2.2565428, 
+    "location" : {
+        "type" : "Point", 
+        "coordinates" : [
+            2.2565428, 
+            48.8836525
+        ]
+    }, 
+    "login" : "llabrecque", 
+    "orientation" : "Women", 
+    "password" : "sha1$12faf935$1$5937d1fb7242e2b3f19c84061ef3c48501b2e564", 
+    "popularityScore" : NumberInt(5), 
+    "profilePicture" : "woman.jpg", 
+    "sex" : "female", 
+    "status" : "offline"
+}
+{ 
+    "_id" : ObjectId("597b64da55b02e0f1c4284ea"), 
+    "address" : "3bis Rue du Limousin, 95100 Argenteuil", 
+    "age" : NumberInt(33), 
+    "bio" : "Lorem Ipsum", 
+    "dob" : "1984-06-18", 
+    "email" : "ErikaDurand@dayrep.com", 
+    "filter" : {
+        "minAge" : "18.00", 
+        "maxAge" : "80.00", 
+        "minScore" : "0.00", 
+        "maxScore" : "10.00"
+    }, 
+    "filterBy" : "none", 
+    "firstName" : "Erika", 
+    "hashtag" : [
+        "geek", 
+        "bavard", 
+        "aventurier"
+    ], 
+    "hashtagFilter" : "", 
+    "images" : [
+        "woman.jpg"
+    ], 
+    "lastConnection" : ISODate("2017-08-01T15:37:27.861+0000"), 
+    "lastName" : "Durand", 
+    "lat" : 48.9637375, 
+    "lng" : 2.2368649, 
+    "location" : {
+        "type" : "Point", 
+        "coordinates" : [
+            2.2368649, 
+            48.9637375
+        ]
+    }, 
+    "login" : "erikadurand", 
+    "orientation" : "Men", 
+    "password" : "sha1$12faf935$1$5937d1fb7242e2b3f19c84061ef3c48501b2e564", 
+    "popularityScore" : NumberInt(5), 
+    "profilePicture" : "woman.jpg", 
+    "sex" : "female", 
+    "status" : "offline"
+}
+{ 
+    "_id" : ObjectId("5980758ebb608e2c32f3c7f3"), 
+    "age" : NumberInt(31), 
+    "dob" : "1986-4-11", 
+    "email" : "zheng.delong@gmaiil.com", 
+    "filter" : {
+        "minAge" : "18.00", 
+        "maxAge" : "80.00", 
+        "minScore" : "0.00", 
+        "maxScore" : "10.00"
+    }, 
+    "filterBy" : "none", 
+    "firstName" : "Delong", 
+    "hashtag" : [
+        "geek"
+    ], 
+    "hashtagFilter" : "sociable", 
+    "images" : [
+        "man.jpg" 
+    ], 
+    "lastConnection" : ISODate("2017-08-01T15:37:27.861+0000"), 
+    "lastName" : "Zheng", 
+    "location" : {
+        "type" : "Point", 
+        "coordinates" : [
+            2.3603689, 
+            48.8785618
+        ]
+    }, 
+    "login" : "tchango", 
+    "orientation" : "Men", 
+    "password" : "sha1$a3fe6855$1$77d3df68987cda7be387b428f427d4f0a7b9e566", 
+    "popularityScore" : NumberInt(10), 
+    "profilePicture" : "man.jpg", 
+    "sex" : "male", 
+    "status" : "offline", 
+    "tmpAddress" : "177 Rue du Faubourg Saint-Martin, 75010 Paris, France", 
+    "tmpLat" : "48.8785618", 
+    "tmpLng" : "2.3603689"
+}
+{ 
+    "_id" : ObjectId("597b64da55b02e0f1c4284dc"), 
+    "address" : "5 Rue Robert, 13007 Marseille", 
+    "age" : NumberInt(46), 
+    "bio" : "Lorem Ipsum", 
+    "dob" : "1970-10-27", 
+    "email" : "PaienCyr@dayrep.com", 
+    "filter" : {
+        "minAge" : "18.00", 
+        "maxAge" : "80.00", 
+        "minScore" : "0.00", 
+        "maxScore" : "10.00"
+    }, 
+    "filterBy" : "none", 
+    "firstName" : "Marlon", 
+    "hashtag" : [
+        "bavard", 
+        "aventurier"
+    ], 
+    "hashtagFilter" : "", 
+    "images" : [
+        "man.jpg"
+    ], 
+    "lastConnection" : ISODate("2017-08-01T15:37:27.861+0000"), 
+    "lastName" : "Vadeboncoeur", 
+    "lat" : 43.291093, 
+    "lng" : 5.3652794, 
+    "location" : {
+        "type" : "Point", 
+        "coordinates" : [
+            5.3652794, 
+            43.291093
+        ]
+    }, 
+    "login" : "mvadeboncoeur", 
+    "orientation" : "Women", 
+    "password" : "sha1$12faf935$1$5937d1fb7242e2b3f19c84061ef3c48501b2e564", 
+    "popularityScore" : NumberInt(8), 
+    "profilePicture" : "man.jpg", 
+    "sex" : "male", 
+    "status" : "offline"
+}
+{ 
+    "_id" : ObjectId("597b64da55b02e0f1c4284dd"), 
+    "address" : "18 Passage Saint-Pierre Amelot, 75011 Paris", 
+    "age" : NumberInt(29), 
+    "bio" : "Lorem Ipsum", 
+    "dob" : "1988-03-11", 
+    "email" : "davetBerube@teleworm.us", 
+    "filter" : {
+        "minAge" : "18.00", 
+        "maxAge" : "80.00", 
+        "minScore" : "0.00", 
+        "maxScore" : "10.00"
+    }, 
+    "filterBy" : "none", 
+    "firstName" : "Royden", 
+    "hashtag" : [
+        "aventurier"
+    ], 
+    "hashtagFilter" : "", 
+    "images" : [
+        "man.jpg"
+    ], 
+    "lastConnection" : ISODate("2017-08-01T15:37:27.861+0000"), 
+    "lastName" : "Bussière", 
+    "lat" : 48.8628827, 
+    "lng" : 2.3690156, 
+    "location" : {
+        "type" : "Point", 
+        "coordinates" : [
+            2.3690156, 
+            48.8628827
+        ]
+    }, 
+    "login" : "rbussiere", 
+    "orientation" : "Women", 
+    "password" : "sha1$12faf935$1$5937d1fb7242e2b3f19c84061ef3c48501b2e564", 
+    "popularityScore" : NumberInt(2), 
+    "profilePicture" : "man.jpg", 
+    "sex" : "male", 
+    "status" : "offline"
+}
+{ 
+    "_id" : ObjectId("597b64da55b02e0f1c4284df"), 
+    "address" : "6 Rue du Général Henrion Bertier, 92200 Neuilly-sur-Seine", 
+    "age" : NumberInt(33), 
+    "bio" : "Lorem Ipsum", 
+    "dob" : "1983-07-18", 
+    "email" : "LucLabrecque@dayrep.com", 
+    "filter" : {
+        "minAge" : "18.00", 
+        "maxAge" : "80.00", 
+        "minScore" : "0.00", 
+        "maxScore" : "10.00"
+    }, 
+    "filterBy" : "none", 
+    "firstName" : "Luc", 
+    "hashtag" : [
+        "geek"
+    ], 
+    "hashtagFilter" : "", 
+    "images" : [
+        "man.jpg"
+    ], 
+    "lastConnection" : ISODate("2017-08-01T15:37:27.861+0000"), 
+    "lastName" : "Labrecque", 
+    "lat" : 48.8836525, 
+    "lng" : 2.2565428, 
+    "location" : {
+        "type" : "Point", 
+        "coordinates" : [
+            2.2565428, 
+            48.8836525
+        ]
+    }, 
+    "login" : "llabrecque", 
+    "orientation" : "Men", 
+    "password" : "sha1$12faf935$1$5937d1fb7242e2b3f19c84061ef3c48501b2e564", 
+    "popularityScore" : NumberInt(1), 
+    "profilePicture" : "man.jpg", 
+    "sex" : "male", 
+    "status" : "offline"
+}
+{ 
+    "_id" : ObjectId("597b64da55b02e0f1c4284e1"), 
+    "address" : "6 Rue Valette, 93100 Montreuil", 
+    "age" : NumberInt(21), 
+    "bio" : "Lorem Ipsum", 
+    "dob" : "1996-06-11", 
+    "email" : "TearlachSt-Jean@dayrep.com", 
+    "filter" : {
+        "minAge" : "18.00", 
+        "maxAge" : "80.00", 
+        "minScore" : "0.00", 
+        "maxScore" : "10.00"
+    }, 
+    "filterBy" : "none", 
+    "firstName" : "Tearlach", 
+    "hashtag" : [
+        "geek", 
+        "intello", 
+        "bavard", 
+        "sociable", 
+        "aventurier"
+    ], 
+    "hashtagFilter" : "", 
+    "images" : [
+        "man.jpg"
+    ], 
+    "lastConnection" : ISODate("2017-08-01T15:45:51.505+0000"), 
+    "lastName" : "St-Jean", 
+    "lat" : 48.8551725, 
+    "lng" : 2.4191181, 
+    "location" : {
+        "type" : "Point", 
+        "coordinates" : [
+            2.4191181, 
+            48.8551725
+        ]
+    }, 
+    "login" : "stjean", 
+    "orientation" : "Men", 
+    "password" : "sha1$12faf935$1$5937d1fb7242e2b3f19c84061ef3c48501b2e564", 
+    "popularityScore" : NumberInt(10), 
+    "profilePicture" : "man.jpg", 
+    "sex" : "male", 
+    "status" : "offline"
+}
+{ 
+    "_id" : ObjectId("597b64da55b02e0f1c4284e6"), 
+    "address" : "5 Rue Robert, 13007 Marseille", 
+    "age" : NumberInt(46), 
+    "bio" : "Lorem Ipsum", 
+    "dob" : "1970-10-27", 
+    "email" : "PaienaaCyr@dayrep.com", 
+    "filter" : {
+        "minAge" : "18.00", 
+        "maxAge" : "80.00", 
+        "minScore" : "0.00", 
+        "maxScore" : "10.00"
+    }, 
+    "filterBy" : "none", 
+    "firstName" : "Marlona", 
+    "hashtag" : [
+        "bavard", 
+        "aventurier"
+    ], 
+    "hashtagFilter" : "", 
+    "images" : [
+        "woman.jpg"
+    ], 
+    "lastConnection" : ISODate("2017-08-01T15:37:27.861+0000"), 
+    "lastName" : "Vadeboncoeur", 
+    "lat" : 43.291093, 
+    "lng" : 5.3652794, 
+    "location" : {
+        "type" : "Point", 
+        "coordinates" : [
+            5.3652794, 
+            43.291093
+        ]
+    }, 
+    "login" : "mvadeboncoeur", 
+    "orientation" : "Men", 
+    "password" : "sha1$12faf935$1$5937d1fb7242e2b3f19c84061ef3c48501b2e564", 
+    "popularityScore" : NumberInt(4), 
+    "profilePicture" : "woman.jpg", 
+    "sex" : "female", 
+    "status" : "offline"
+}
+{ 
+    "_id" : ObjectId("597b64da55b02e0f1c4284e7"), 
+    "address" : "18 Passage Saint-Pierre Amelot, 75011 Paris", 
+    "age" : NumberInt(29), 
+    "bio" : "Lorem Ipsum", 
+    "dob" : "1988-03-11", 
+    "email" : "daveaatBerube@teleworm.us", 
+    "filter" : {
+        "minAge" : "18.00", 
+        "maxAge" : "80.00", 
+        "minScore" : "0.00", 
+        "maxScore" : "10.00"
+    }, 
+    "filterBy" : "none", 
+    "firstName" : "Roydena", 
+    "hashtag" : [
+        "aventurier"
+    ], 
+    "hashtagFilter" : "", 
+    "images" : [
+        "woman.jpg"
+    ], 
+    "lastConnection" : ISODate("2017-08-01T15:37:27.861+0000"), 
+    "lastName" : "Bussière", 
+    "lat" : 48.8628827, 
+    "lng" : 2.3690156, 
+    "location" : {
+        "type" : "Point", 
+        "coordinates" : [
+            2.3690156, 
+            48.8628827
+        ]
+    }, 
+    "login" : "raabussiere", 
+    "orientation" : "Men", 
+    "password" : "sha1$12faf935$1$5937d1fb7242e2b3f19c84061ef3c48501b2e564", 
+    "popularityScore" : NumberInt(2), 
+    "profilePicture" : "woman.jpg", 
+    "sex" : "female", 
+    "status" : "offline"
+}
+{ 
+    "_id" : ObjectId("597b64da55b02e0f1c4284d4"), 
+    "address" : "76 Avenue Parmentier, 75011 Paris, France", 
+    "age" : NumberInt(24), 
+    "bio" : "Shooting Start That you move so fast that you can't keep up ! but you say !\r\n", 
+    "dob" : "1992-09-21", 
+    "email" : "zheng.denis@gmail.com", 
+    "filter" : {
+        "minAge" : "18.00", 
+        "maxAge" : "80.00", 
+        "minScore" : "0.00", 
+        "maxScore" : "10.00"
+    }, 
+    "filterBy" : "location-up", 
+    "firstName" : "Arnaud", 
+    "hashtag" : [
+        "geek", 
+        "sociable", 
+        "bavard"
+    ], 
+    "hashtagFilter" : "", 
+    "images" : [
+        "man.jpg"
+    ], 
+    "lastConnection" : ISODate("2017-08-01T17:14:50.919+0000"), 
+    "lastName" : "Lecomte", 
+    "lat" : 48.8640713, 
+    "lng" : 2.3756215, 
+    "location" : {
+        "type" : "Point", 
+        "coordinates" : [
+            2.3756215, 
+            48.8640713
+        ]
+    }, 
+    "login" : "arlecomt", 
+    "orientation" : "Men", 
+    "password" : "sha1$02710e94$1$daae137452343d8bc5b9850ddceee7f9c0ca51ed", 
+    "popularityScore" : NumberInt(10), 
+    "profilePicture" : "man.jpg", 
+    "sex" : "male", 
+    "status" : "online", 
+    "tmpAddress" : "Cité du Figuier, 75011 Paris, France", 
+    "tmpLat" : "48.8656", 
+    "tmpLng" : "2.3789894"
+}
+{ 
+    "_id" : ObjectId("597b64da55b02e0f1c4284d8"), 
+    "address" : "39 Rue Adrien Cramail, 92500 Rueil-Malmaison", 
+    "age" : NumberInt(25), 
+    "bio" : "Lorem Ipsum", 
+    "dob" : "1992-02-28", 
+    "email" : "AlexandreBarriere@jourrapide.com", 
+    "filter" : {
+        "minAge" : "18.00", 
+        "maxAge" : "80.00", 
+        "minScore" : "0.00", 
+        "maxScore" : "10.00"
+    }, 
+    "filterBy" : "none", 
+    "firstName" : "Alexandre", 
+    "hashtag" : [
+        "geek", 
+        "bavard", 
+        "sociable", 
+        "aventurier"
+    ], 
+    "hashtagFilter" : "", 
+    "images" : [
+        "man.jpg"
+    ], 
+    "lastConnection" : ISODate("2017-08-01T15:37:27.861+0000"), 
+    "lastName" : "Barrière", 
+    "lat" : 48.881757, 
+    "lng" : 2.1696348, 
+    "location" : {
+        "type" : "Point", 
+        "coordinates" : [
+            2.1696348, 
+            48.881757
+        ]
+    }, 
+    "login" : "abarrière", 
+    "orientation" : "Women", 
+    "password" : "sha1$12faf935$1$5937d1fb7242e2b3f19c84061ef3c48501b2e564", 
+    "popularityScore" : NumberInt(4), 
+    "profilePicture" : "man.jpg", 
+    "sex" : "male", 
+    "status" : "offline"
+}
+{ 
+    "_id" : ObjectId("597b64da55b02e0f1c4284e2"), 
+    "address" : "39 Rue Adrien Cramail, 92500 Rueil-Malmaison", 
+    "age" : NumberInt(25), 
+    "bio" : "Lorem Ipsum", 
+    "dob" : "1992-02-28", 
+    "email" : "alexiière@jourrapide.com", 
+    "filter" : {
+        "minAge" : "18.00", 
+        "maxAge" : "80.00", 
+        "minScore" : "0.00", 
+        "maxScore" : "10.00"
+    }, 
+    "filterBy" : "none", 
+    "firstName" : "Alexandri", 
+    "hashtag" : [
+        "geek", 
+        "bavard", 
+        "sociable", 
+        "aventurier"
+    ], 
+    "hashtagFilter" : "", 
+    "images" : [
+        "woman.jpg"
+    ], 
+    "lastConnection" : ISODate("2017-08-01T15:37:27.861+0000"), 
+    "lastName" : "Barrière", 
+    "lat" : 48.881757, 
+    "lng" : 2.1696348, 
+    "location" : {
+        "type" : "Point", 
+        "coordinates" : [
+            2.1696348, 
+            48.881757
+        ]
+    }, 
+    "login" : "alexiière", 
+    "orientation" : "Men", 
+    "password" : "sha1$12faf935$1$5937d1fb7242e2b3f19c84061ef3c48501b2e564", 
+    "popularityScore" : NumberInt(8), 
+    "profilePicture" : "woman.jpg", 
+    "sex" : "female", 
+    "status" : "offline"
+}
+{ 
+    "_id" : ObjectId("597b64da55b02e0f1c4284eb"), 
+    "address" : "6 Rue Valette, 93100 Montreuil", 
+    "age" : NumberInt(21), 
+    "bio" : "Lorem Ipsum", 
+    "dob" : "1996-06-11", 
+    "email" : "TearlachSt-Jean@dayrep.com", 
+    "filter" : {
+        "minAge" : "18.00", 
+        "maxAge" : "80.00", 
+        "minScore" : "0.00", 
+        "maxScore" : "10.00"
+    }, 
+    "filterBy" : "none", 
+    "firstName" : "Tearlacha", 
+    "hashtag" : [
+        "geek", 
+        "intello", 
+        "bavard", 
+        "sociable", 
+        "aventurier"
+    ], 
+    "hashtagFilter" : "", 
+    "images" : [
+        "woman.jpg"
+    ], 
+    "lastConnection" : ISODate("2017-08-01T15:37:27.861+0000"), 
+    "lastName" : "St-Jean", 
+    "lat" : 48.8551725, 
+    "lng" : 2.4191181, 
+    "location" : {
+        "type" : "Point", 
+        "coordinates" : [
+            2.4191181, 
+            48.8551725
+        ]
+    }, 
+    "login" : "saatjean", 
+    "orientation" : "Men", 
+    "password" : "sha1$12faf935$1$5937d1fb7242e2b3f19c84061ef3c48501b2e564", 
+    "popularityScore" : NumberInt(0), 
+    "profilePicture" : "woman.jpg", 
+    "sex" : "female", 
+    "status" : "offline"
+}

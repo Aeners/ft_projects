@@ -1,0 +1,8 @@
+# Trouvez une commande qui donne la liste des règles de pare-feu
+
+iptables -L -n
+
+# To List all rules in the selected chain use the -L option.
+# If no chain is selected, all chains are listed. As every other iptables command,
+# it applies to the specified table.
+# The -n option help to print IP addresses and port numbers in numeric format.

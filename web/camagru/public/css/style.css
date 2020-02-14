@@ -1,0 +1,273 @@
+p {
+	margin: 0 0 10px;
+	word-wrap: break-word;
+}
+
+label {
+	display: inline-block;
+	max-width: 100%;
+	margin-bottom: 5px;
+	font-weight: 700;
+}
+
+.form-control {
+	display: block;
+	width: 100%;
+	height: 34px;
+/*    padding: 6px 12px;*/
+	font-size: 14px;
+	line-height: 1.42857143;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+	transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+}
+
+.btn {
+	display: inline-block;
+	padding: 6px 12px;
+	margin-bottom: 0;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 1.42857143;
+	text-align: center;
+	white-space: nowrap;
+	vertical-align: middle;
+	-ms-touch-action: manipulation;
+	touch-action: manipulation;
+	cursor: pointer;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	background-image: none;
+	border: 1px solid transparent;
+	border-radius: 4px;
+}
+
+.btn-primary {
+	color: #fff;
+	background-color: #333;
+
+}
+
+a
+{
+	color: #337ab7;
+	text-decoration: none;
+}
+
+.com_container {
+	text-align: left;
+}
+
+img.images {
+	height: 200px;
+}
+
+img.cross {
+	width: 20px;
+	height: 20px;
+	margin-top: 4px;
+	margin-left: -25px;
+	position: absolute;
+	display: none;
+	cursor: pointer;
+	z-index: 2000;
+}
+
+div.div_image {
+	height: 200px;
+	width: 300px;
+	display: inline-block;
+	margin: 5px;
+}
+
+div.img-thumbnail {
+	margin-bottom: 20px;
+	width: 100%;
+	max-width: 500px;
+}
+
+p.comment {
+	word-wrap: break-word;
+}
+
+img.filters {
+	height: 50px;
+}
+
+div#filters {
+	/*width: 610px;*/
+	height: 75px;
+	overflow: overlay;
+	margin: 15px auto;
+}
+
+div.div_filters {
+	display: inline-block;
+}
+
+#gallery_container {
+	text-align: center;
+	margin: auto;
+}
+
+.img-thumbnail {
+	border: 1px solid #909090;
+	padding: 12px 10px 10px 10px;
+	border-radius: 2%;
+	margin: auto;
+}
+
+#side_container {
+	display: inline-block;
+	width: 100%;
+	max-width: 860px;
+}
+
+img.img_preview {
+	width: 30%;
+	justify-content: space-between;
+}
+
+.alert {
+	padding: 15px;
+	margin-bottom: 20px;
+	border: 1px solid transparent;
+	border-radius: 4px;
+	width: 100%;
+}
+
+.alert-success {
+	color: #3c763d;
+	background-color: #dff0d8;
+	border-color: #d6e9c6;
+}
+
+.alert-danger {
+	color: #a94442;
+	background-color: #f2dede;
+	border-color: #ebccd1;
+}
+
+.alert-info {
+	color: #31708f;
+	background-color: #d9edf7;
+	border-color: #bce8f1;
+}
+div label input {
+   margin-right:100px;
+}
+
+#ck-button {
+	margin: 10px auto;
+	background-color: #EFEFEF;
+	border-radius: 4px;
+	border: 1px solid #D0D0D0;
+	overflow: auto;
+	width: 125px;
+}
+
+#ck-button label {
+	float:left;
+	width:130px;
+	margin-bottom: 0px;
+}
+
+#ck-button label span {
+	text-align:center;
+	padding:3px 0px;
+	display:block;
+}
+
+#ck-button label input {
+	position:absolute;
+	top:-20px;
+}
+
+#ck-button input:checked + span {
+	background-color:#333;
+	color:#fff;
+}
+
+#canvas {
+	border: 1px solid black;
+	margin-top: 10px;
+	max-width: 500px;
+	width: 100%;
+	cursor: pointer;
+}
+
+img.image {
+	max-width: 500px;
+	width: 100%;
+}
+
+.sign-pages {
+	width: 60%;
+	margin: auto;
+}
+
+.greyscale {
+	-webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+}
+
+#video {
+	width: 100%;
+	max-height: 375px;
+	height: 100%;
+}
+
+div#helpBox {
+    display: none;
+    background: white;
+    position: fixed;
+    padding-right: 20px;
+    z-index: 1;
+    border: 1px solid grey;
+    border-radius: 8px;
+    box-shadow: 4px 3px 10px #888888;
+    left: 50%;
+    top: 30%;	
+    transform: translate(-50%, -50%);
+}
+
+#close {
+	cursor: pointer;
+	color: #aaaaaa; 
+	float: right; 
+	font-size: 28px; 
+	font-weight: bold;
+
+}
+
+#likersBox #close {
+    position: fixed;
+    margin-left: 95px;
+}
+
+#likersBox {
+    display: none;
+    background: white;
+    z-index: 1;
+    border: 1px solid grey;
+    border-radius: 8px;
+    box-shadow: 4px 3px 10px #888888;
+    width: 207px;
+    text-align: center;
+    position: fixed;
+    left: 50%;
+    top: 30%;
+    transform: translate(-50%, -50%);
+}
+
+.gallery-container {
+	width: 80%;
+	margin: auto;
+}
+
+#footer {
+	display: none;
+}

@@ -1,0 +1,6 @@
+SQL injection using
+`1 UNION SELECT title, comment FROM Member_images.list_images `
+on search images page reveals comment
+`If you read this just use this md5 decode lowercase then sha256 to win this flag ! : 1928e8083cf461a51303633093573c46`
+which when decoded reveals
+`albatroz`

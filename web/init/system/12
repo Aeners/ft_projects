@@ -1,0 +1,6 @@
+# Déterminerz la taille exacte de chaque dossier de /var
+
+du -sh /var/*
+
+# L'option '-s' permet d'avoir le sommaire du total de la taille utilisée
+# dans un disque d'un dossier

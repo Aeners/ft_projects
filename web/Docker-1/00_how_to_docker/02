@@ -1,0 +1,3 @@
+# Récupérer l’adresse IP de la machine virtuelle Char
+
+docker-machine ip Char

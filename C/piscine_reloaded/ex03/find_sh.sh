@@ -1,0 +1,1 @@
+find . -name "*.sh" | grep -E -o '[^/]+$' | cut -d. -f1

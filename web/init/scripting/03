@@ -1,0 +1,5 @@
+# Réaliser un script qui affiche la liste des fichiers triés par taille présents dans le dossier
+# passé en argument
+
+#!/bin/sh
+ls -lS $1 | grep -v '^d'

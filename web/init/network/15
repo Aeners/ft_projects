@@ -1,0 +1,5 @@
+# Quel est le fichier contenant les entrées locales DNS ?
+
+echo "/etc/hosts"
+
+# https://www.tecmint.com/setup-local-dns-using-etc-hosts-file-in-linux/

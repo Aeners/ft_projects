@@ -1,0 +1,234 @@
+<div class="container">
+    <div class="row">
+        <!-- RIGHT COLUMN -->
+        <div class="col-sm-3">
+        <form action="/search/result" method="post">
+            <div class="box hr1">
+                <h4>Filter</h4>
+                <span><b>Age</b></span><br>
+                <input type="hidden" id="age-min" name="age-min" value="">
+                <input type="hidden" id="age-max" name="age-max" value="">
+                <div class="range-age-values" id="skip-value-lower"></div>
+                <div class="range-age-values" id="skip-value-upper"></div>
+                <div id="range_age"></div><br>
+                <span><b>Score</b></span><br>
+                <input type="hidden" id="score-min" name="score-min" value="">
+                <input type="hidden" id="score-max" name="score-max" value="">
+                <div class="range-age-values" id="skip-value-lower-score"></div>
+                <div class="range-age-values" id="skip-value-upper-score"></div>
+                <div id="range_score"></div>
+            </div>
+            <div class="box hl2">
+                <h4>Orientation</h4>
+                <select class="form-control" id="sel1" name="orientation">
+                    <option value="bisexual" <%= post['orientation'] === "bisexual" ? 'selected' : '' %>>Bisexual</option>
+                    <option value="men" <%= post['orientation'] === "men" ? 'selected' : '' %>>Men</option>
+                    <option value="women" <%= post['orientation'] === "women" ? 'selected' : '' %>>Women</option>
+                </select>
+            </div>
+            <div class="box hr2">
+                <h4>Location filter</h4>
+                <span><b>Address</b></span><br>
+                <input type="text" name="location" class="form-control" id="location" value="<%= location ? location : '' %>">
+            </div>
+            <div class="box hr3">
+                <h4>Filter by interest</h4>
+                <span>Separated by spaces</span>
+                <input type="text" name="hashtags" class="form-control" value="<%= post['hashtags'] ? post['hashtags'] : '' %>" placeholder="Enter #">
+            </div>
+            <div class="box">
+                <h4>Filter by</h4>
+                <div class="form-group">
+                <select class="form-control" id="sel1" name="filter">
+                    <option value="age up" <%= post['filter'] === "age up" ? 'selected' : '' %>>Age ↗</option>
+                    <option value="age down" <%= post['filter'] === "age down" ? 'selected' : '' %>>Age ↘</option>
+                    <option value="location up" <%= post['filter'] === "location up" ? 'selected' : '' %>>Localisation ↗</option>
+                    <option value="location down" <%= post['filter'] === "location down" ? 'selected' : '' %>>Localisation ↘</option>
+                    <option value="popularity up" <%= post['filter'] === "popularity up" ? 'selected' : '' %>>Popularity ↗</option>
+                    <option value="popularity down" <%= post['filter'] === "popularity down" ? 'selected' : '' %>>Popularity ↘</option>
+                    <option value="tags up" <%= post['filter'] === "tags up" ? 'selected' : '' %>>Tags in common ↗</option>
+                    <option value="tags down" <%= post['filter'] === "tags down" ? 'selected' : '' %>>Tags in common ↘</option>
+                </select>
+                </div>
+            </div>
+            <div class="box">
+                <!-- Secondary, outline button -->
+                <input type="submit" class="btn btn-primary" value="Go !">
+            </div>
+        </div>
+        </form>
+        <!-- MIDD COLUMN -->
+        <div class="col-sm-9">
+            <div class="box">
+                <% if (errors) { %>
+                    <% for(var i=0; i < errors.length; i++) { %>
+                    <div class="alert alert-danger">&nbsp;<%- errors[i]['msg'] %></div>
+                    <% } %>
+                <% } %>
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th>Login</th>
+                            <th>Name</th>
+                            <th>Age</th>
+                            <th>Sex</th>
+                            <th>Location</th>
+                            <th>Hashtags</th>
+                            <th>Score</th>
+                            <th>Status</th>
+                            <th>Link</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    <% if (filter) { %>
+                        <% for (var i = 0; i < filter.length; i++) { %>
+                            <tr>
+                                <td><%= filter[i].firstName %></td>
+                                <td><%= filter[i].lastName %></td>
+                                <td><%= filter[i].age %></td>
+                                <td><%= filter[i].sex %></td>
+                                <td><%= filter[i].address ? filter[i].address : filter[i].tmpAddress; %></td>
+                                <td>
+                                    <% for (var j = 0; j < filter[i].hashtag.length; j++) { %>
+                                        <%= filter[i].hashtag[j] %> 
+                                    <% } %>
+                                </td>
+                                <td><%= filter[i].popularityScore %></td>
+                                <td style="color: <%= filter[i].status === 'online' ? 'green' : 'red'%>;"><%= filter[i].status === "online" ? "Online" : "Offline"%></td>
+                                <td><a href="/profile/<%= filter[i].login %>">Profile</a></td>
+                            </tr>
+                        <% } %>
+                    <% } %>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="/js/nouislider.js"></script>
+<script>
+    document.querySelector('#searchButton').setAttribute('class', 'active');
+    function url(){
+        var url =  window.location.href;
+        url = url.split("/");
+        return(url[0] + '//' + url[2] + '');
+    }
+
+    /* Age range */
+    var skipSlider = document.getElementById('range_age');
+
+    noUiSlider.create(skipSlider, {
+        range: {
+            'min':	18,
+            '2%':	19,
+            '3%':	20,
+            '5%':	21,
+            '6%':	22,
+            '8%':	23,
+            '10%':	24,
+            '11%':	25,
+            '13%':	26,
+            '15%':	27,
+            '16%':	28,
+            '18%':	29,
+            '19%':	30,
+            '21%':	31,
+            '23%':	32,
+            '24%':	33,
+            '26%':	34,
+            '27%':	35,
+            '29%':	36,
+            '31%':	37,
+            '32%':	38,
+            '34%':	39,
+            '35%':	40,
+            '37%':	41,
+            '39%':	42,
+            '40%':	43,
+            '42%':	44,
+            '44%':	45,
+            '45%':	46,
+            '47%':	47,
+            '48%':	48,
+            '50%':	49,
+            '52%':	50,
+            '53%':	51,
+            '55%':	52,
+            '56%':	53,
+            '58%':	54,
+            '60%':	55,
+            '61%':	56,
+            '63%':	57,
+            '65%':	58,
+            '66%':	59,
+            '68%':	60,
+            '69%':	61,
+            '71%':	62,
+            '73%':	63,
+            '74%':	64,
+            '76%':	65,
+            '77%':	66,
+            '79%':	67,
+            '81%':	68,
+            '82%':	69,
+            '84%':	70,
+            '85%':	71,
+            '87%':	72,
+            '89%':	73,
+            '90%':	74,
+            '92%':	75,
+            '94%':	76,
+            '95%':	77,
+            '97%':	78,
+            '98%':	79,
+            'max':	80
+        },
+        snap: true,
+        start: [<%= post['age-min'] ? post['age-min'] : 18 %>, <%= post['age-max'] ? post['age-max'] : 80 %>]
+    });
+    var skipValues = [
+        document.getElementById('skip-value-lower'),
+        document.getElementById('skip-value-upper')
+    ];
+    skipSlider.noUiSlider.on('update', function( values, handle ) {
+        skipValues[handle].innerHTML = Math.round(values[handle]);
+        if (handle === 0) {
+            document.getElementById('age-min').value = Math.round(values[handle]);
+        } else {
+            document.getElementById('age-max').value = Math.round(values[handle]);
+        }
+    });
+
+    /* Score range */
+    var skipSliderScore = document.getElementById('range_score');
+
+    noUiSlider.create(skipSliderScore, {
+        range: {
+            'min':	0,
+            '10%':	1,
+            '20%':	2,
+            '30%':	3,
+            '40%':	4,
+            '50%':	5,
+            '60%':	6,
+            '70%':	7,
+            '80%':	8,
+            '90%':	9,
+            'max':	10
+        },
+        snap: true,
+        start: [<%= post['score-min'] ? post['score-min'] : 0 %>, <%= post['score-max'] ? post['score-max'] : 10 %>]
+    });
+    var skipValuesScore = [
+        document.getElementById('skip-value-lower-score'),
+        document.getElementById('skip-value-upper-score')
+    ];
+    skipSliderScore.noUiSlider.on('update', function( values, handle ) {
+        skipValuesScore[handle].innerHTML = Math.round(values[handle]);
+        if (handle === 0) {
+            document.getElementById('score-min').value = Math.round(values[handle]);
+        } else {
+            document.getElementById('score-max').value = Math.round(values[handle]);
+        }
+    });
+</script>

@@ -1,0 +1,3 @@
+# Quelle commande permet de lister les tables de partitions des périphériques ?
+
+fdisk -l

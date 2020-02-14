@@ -1,0 +1,6 @@
+# Réaliser un srcipt qui affiche seulement le login, le UID et le Path de chaques entrées du fichier /etc/passwd
+
+#!/bin/sh
+sudo cat /etc/passwd | awk -F  ":" '{print $1 "   " $3 "   " $6}' | column -t
+
+# column -t arrange joliement les colonnes

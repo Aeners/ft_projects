@@ -1,0 +1,5 @@
+# Donnez une commande pour redémarrer le service SSH
+
+service ssh restart
+
+# Verifier avec un 'service ssh status' que le serveur ssh a bien redémarré.
